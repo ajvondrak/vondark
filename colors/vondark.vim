@@ -37,6 +37,7 @@ let s:pink    = "#dc67ea"
 function! s:hi(group, gui)
   execute "highlight clear " . a:group
   execute "highlight " . a:group . "   gui=" . get(a:gui, "ui", "NONE")
+  execute "highlight " . a:group . " cterm=" . get(a:gui, "ui", "NONE")
   execute "highlight " . a:group . " guifg=" . get(a:gui, "fg", "NONE")
   execute "highlight " . a:group . " guibg=" . get(a:gui, "bg", "NONE")
   execute "highlight " . a:group . " guisp=" . get(a:gui, "sp", "NONE")
@@ -103,10 +104,17 @@ call s:hi("PmenuSbar",        {"bg": s:dimmer})
 call s:hi("PmenuThumb",       {"bg": s:fg})
 
 " Spelling
-call s:hi("SpellBad",         {"sp": s:red, "ui": "undercurl"})
-call s:hi("SpellCap",         {"sp": s:aqua, "ui": "undercurl"})
-call s:hi("SpellLocal",       {"sp": s:yellow, "ui": "undercurl"})
-call s:hi("SpellRare",        {"sp": s:yellow, "ui": "undercurl"})
+if has("gui_running")
+  call s:hi("SpellBad",         {"sp": s:red, "ui": "undercurl"})
+  call s:hi("SpellCap",         {"sp": s:aqua, "ui": "undercurl"})
+  call s:hi("SpellLocal",       {"sp": s:yellow, "ui": "undercurl"})
+  call s:hi("SpellRare",        {"sp": s:yellow, "ui": "undercurl"})
+else
+  call s:hi("SpellBad",         {"fg": s:red, "ui": "undercurl"})
+  call s:hi("SpellCap",         {"fg": s:aqua, "ui": "undercurl"})
+  call s:hi("SpellLocal",       {"fg": s:yellow, "ui": "undercurl"})
+  call s:hi("SpellRare",        {"fg": s:yellow, "ui": "undercurl"})
+end
 
 " Tabs & Splits
 call s:hi("TabLine",          {"fg": s:fg, "bg": s:dimmest})
