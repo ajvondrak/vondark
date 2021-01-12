@@ -35,6 +35,7 @@ let s:slate   = "#8eacbb"
 let s:pink    = "#dc67ea"
 
 function! s:hi(group, gui)
+  execute "highlight clear " . a:group
   execute "highlight " . a:group . "   gui=" . get(a:gui, "ui", "NONE")
   execute "highlight " . a:group . " guifg=" . get(a:gui, "fg", "NONE")
   execute "highlight " . a:group . " guibg=" . get(a:gui, "bg", "NONE")
