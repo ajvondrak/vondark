@@ -117,8 +117,8 @@ else
 end
 
 " Tabs & Splits
-call s:hi("TabLine",          {"fg": s:fg, "bg": s:dimmest})
-call s:hi("TabLineSel",       {"fg": s:bg, "bg": s:slate})
+call s:hi("TabLine",          {"bg": s:dimmest})
+call s:hi("TabLineSel",       {"bg": s:dimmer})
 call s:hi("TabLineFill",      {"bg": s:dimmest})
 call s:hi("VertSplit",        {"fg": s:dimmer})
 
