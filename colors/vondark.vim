@@ -2,7 +2,6 @@
 " Author:  Alex Vondrak
 " URL:     https://github.com/ajvondrak/vondark
 " License: MIT
-" Version: 0.1
 
 if !has("gui_running") && !(has("termguicolors") && &termguicolors)
   echoerr "The vondark colorscheme requires 24-bit colors; see :h termguicolors"
