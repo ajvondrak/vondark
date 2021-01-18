@@ -24,7 +24,7 @@ $ cd ~/.vim/pack/colors/start
 $ git clone --single-branch https://github.com/ajvondrak/vondark.git
 ```
 
-Vim plugin managers all tend to work similarly (by specifying the ajvondrak/vondark GitHub repository), though they may not support `--single-branch` clones.
+External Vim plugin managers ([vim-plug](https://github.com/junegunn/vim-plug), [vundle](https://github.com/VundleVim/Vundle.vim), [dein](https://github.com/Shougo/dein.vim), [minpac](https://github.com/k-takata/minpac), [volt](https://github.com/vim-volt/volt), etc) all tend to work similarly: just point any of them to the ajvondrak/vondark GitHub repository. However, your plugin manager of choice might not support `--single-branch` clones.
 
 In your `~/.vimrc`, add
 
