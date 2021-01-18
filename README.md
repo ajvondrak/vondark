@@ -34,3 +34,13 @@ colorscheme vondark
 ```
 
 Setting `termguicolors` first is only necessary if you use terminal Vim.
+
+## Documentation
+
+The color scheme is extensively documented in the [wiki](https://github.com/ajvondrak/vondark/wiki). Discussions, screenshots, and more can be found on the following topics:
+
+* 🎨 [**Color Palette**](https://github.com/ajvondrak/vondark/wiki/Color-Palette)
+* ♿ [**Accessibility**](https://github.com/ajvondrak/vondark/wiki/Accessibility)
+* 💡 [**Design**](https://github.com/ajvondrak/vondark/wiki/Design)
+* 🌈 [**Highlighting**](https://github.com/ajvondrak/vondark/wiki/Highlighting)
+* 📸 [**Examples**](https://github.com/ajvondrak/vondark/wiki/Examples)
