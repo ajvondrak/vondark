@@ -12,7 +12,7 @@ Featuring:
 * subtle fold highlighting to get text out of your way.
 * uncomplicated source that isn't overwrought with configuration flags or code.
 
-## Installation
+## 🔨 Installation
 
 Using Vim 8's native [packages](https://vimhelp.org/repeat.txt.html#packages), you can `git clone` this repository under any `~/.vim/pack/[name]/start` directory. It's recommended you use the [`--single-branch`](https://git-scm.com/docs/git-clone#Documentation/git-clone.txt---no-single-branch) flag to avoid downloading the screenshots from the [images](https://github.com/ajvondrak/vondark/tree/images) branch.
 
@@ -35,7 +35,7 @@ colorscheme vondark
 
 Setting `termguicolors` first is only necessary if you use terminal Vim.
 
-## Documentation
+## 📖 Documentation
 
 The color scheme is extensively documented in the [wiki](https://github.com/ajvondrak/vondark/wiki). Discussions, screenshots, and more can be found on the following topics:
 
