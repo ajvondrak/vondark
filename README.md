@@ -37,6 +37,8 @@ Setting `termguicolors` first is only necessary if you use terminal Vim.
 
 ## 📖 Documentation
 
+I wrote a [personal blog post](https://ajvondrak.github.io/soapbox/2021/01/19/vondark/) about creating vondark, if you care about the backstory.
+
 The color scheme is extensively documented in the [wiki](https://github.com/ajvondrak/vondark/wiki). Discussions, screenshots, and more can be found on the following topics:
 
 * 🎨 [**Color Palette**](https://github.com/ajvondrak/vondark/wiki/Color-Palette)
